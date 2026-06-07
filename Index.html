@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY MBG GUAH &gt;:)</title>
+  
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f0f2f5;
+    }
+
+    .tombol-saya {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      padding: 15px 30px;
+      margin-top: 15px;
+      transition: background-color 0.2s;
+    }
+
+    .tombol-saya:hover {
+      background-color: #0056b3;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>MYH BINIH GUAH</h1>
+  
+  <img src="e491bcc915d2798838b4921a03ac247b.jpg" alt="Foto" width="300">
+  
+  <h6>coba klik dulu tombol di bawah</h6>
+  
+  <audio id="lagu-ku" src="7cb6593e1bf36066638f1c35dc72c4f3.mp3"></audio>
+
+  <button class="tombol-saya" onclick="putarMusik()">Click</button>
+
+  <script>
+    function putarMusik() {
+      var audio = document.getElementById("lagu-ku");
+      audio.play().catch(function(error) {
+        console.log("Pemutaran audio gagal atau diblokir browser:", error);
+      });
+    }
+  </script>
+  
+</body>
+</html>
